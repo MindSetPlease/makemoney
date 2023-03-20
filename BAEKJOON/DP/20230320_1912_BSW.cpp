@@ -13,7 +13,7 @@ int main() {
 		cin >> arr[i];
 	}
 	
-	dp[0] = arr[0];
+	dp[0] = arr[0]; 
 	
 	for (int i = 1; i < n; i++) {
 		dp[i] = max(arr[i] + dp[i-1], arr[i]);
